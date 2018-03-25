@@ -32,13 +32,7 @@ public class MainActivity extends AppCompatActivity {
         produto = Double.parseDouble(valorProduto.getText().toString());
         quantidade = Integer.parseInt(valorQuant.getText().toString());
 
-        if(produto== 0 ){
-            produto = 0;
 
-        }else if(quantidade == 0){
-            quantidade = 1;
-
-        }
             totalProduto = produto * quantidade;
 
             totalCompra = totalProduto + totalCompra;
