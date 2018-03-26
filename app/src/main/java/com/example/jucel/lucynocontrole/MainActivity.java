@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     TextView valorProduto,valorQuant,telaTotal;
@@ -29,19 +30,33 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcularCompra(View view){
 
+        if(valorProduto.getText().toString().equals("")) {
+            valorProduto.setError("Preencha este campo!");
+            valorProduto.requestFocus();
+            return;
+        }
+        if(valorQuant.getText().toString().equals("")) {
+            valorQuant.setText("1");
+        }
+        metodoCalculo();
+
+
+    }
+
+    void metodoCalculo(){
+
         produto = Double.parseDouble(valorProduto.getText().toString());
         quantidade = Integer.parseInt(valorQuant.getText().toString());
 
+        totalProduto = produto * quantidade;
 
-            totalProduto = produto * quantidade;
+        totalCompra = totalProduto + totalCompra;
 
-            totalCompra = totalProduto + totalCompra;
-
-            telaTotal.setText(String.valueOf(String.format("%.2f",totalCompra)));
-            valorProduto.setText("");
-            valorQuant.setText("");
-            valorProduto.requestFocus();
-        }
+        telaTotal.setText(String.valueOf(String.format("%.2f",totalCompra)));
+        valorProduto.setText("");
+        valorQuant.setText("");
+        valorProduto.requestFocus();
+    }
 
         
 
