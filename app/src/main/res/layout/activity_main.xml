@@ -104,6 +104,7 @@
         android:layout_marginBottom="2dp"
         android:layout_marginEnd="2dp"
         android:background="@android:color/holo_red_dark"
+        android:onClick="metodoZerar"
         android:text="ZERAR"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/btnAntigo"

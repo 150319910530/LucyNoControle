@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         telaTotal = findViewById(R.id.txtTotal);
 
 
+
     }
 
     public void calcularCompra(View view){
@@ -56,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
         valorProduto.setText("");
         valorQuant.setText("");
         valorProduto.requestFocus();
+    }
+
+    public void metodoZerar(View view){
+
+        totalCompra = 0;
+        telaTotal.setText(String.valueOf(String.format("%.2f",totalCompra)));
+        valorProduto.setText("");
+        valorQuant.setText("");
+        valorProduto.requestFocus();
+
     }
 
         
