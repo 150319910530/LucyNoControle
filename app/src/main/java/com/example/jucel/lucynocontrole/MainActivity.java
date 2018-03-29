@@ -1,11 +1,18 @@
 package com.example.jucel.lucynocontrole;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Map;
+import java.util.Set;
 
 
 public class MainActivity extends Activity {
@@ -25,6 +32,9 @@ public class MainActivity extends Activity {
         valorProduto =  findViewById(R.id.valorProduto);
         valorQuant =  findViewById(R.id.valorQuantidade);
         telaTotal = findViewById(R.id.txtTotal);
+
+
+
 
 
 
@@ -70,8 +80,10 @@ public class MainActivity extends Activity {
 
     }
 
-        
 
 
-    }
+
+
+
+}
 

@@ -87,44 +87,29 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:background="@android:color/holo_orange_light"
         android:onClick="calcularCompra"
         android:text="TOTAL"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAntigo"
+        app:layout_constraintStart_toEndOf="@+id/btnReset"
         app:layout_constraintTop_toBottomOf="@+id/valorQuantidade" />
 
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="2dp"
         android:background="@android:color/holo_red_dark"
         android:onClick="metodoZerar"
         android:text="ZERAR"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/btnAntigo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTotal"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valorQuantidade" />
-
-    <Button
-        android:id="@+id/btnAntigo"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Anterior"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnReset" />
 
 </android.support.constraint.ConstraintLayout>
